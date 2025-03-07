@@ -6,3 +6,14 @@
  * Versão: 1.0
  * Descrição: Implementação do jogo de Xadez em linguagem C, desenvolvido para um projeto acadêmico.
  */
+
+#include <stdio.h>
+
+int main()
+{
+    //Declaração das variáveis
+    int torre, bispo, rainha;  
+    
+    
+    return 0;
+}
