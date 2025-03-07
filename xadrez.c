@@ -12,7 +12,7 @@
 int main()
 {
     // Declaração das variáveis
-    int torre = 1, bispo = 1, rainha = 1;
+    int torre = 1, bispo = 1, rainha = 1, cavalo = 1;
 
     // Movimentação da TORRE!
     while (torre <= 5)
@@ -35,11 +35,27 @@ int main()
     // Espaço para exibição.
     printf("\n\n");
 
-    //Movimentação da RAINHA!
-    for(rainha;rainha <= 8; rainha++)
+    // Movimentação da RAINHA!
+    for (rainha; rainha <= 8; rainha++)
     {
         printf("Esquerda\n");
     }
+
+    // Espaço para exibição.
+    printf("\n\n");
+
+    // Movimentação CAVALO!
+    while (cavalo < 2)
+    {
+        for (cavalo; cavalo <= 2; cavalo++)
+        {
+            printf("Baixo\n");
+        }
+        printf("Esquerda");
+    }
+
+    // Espaço para exibição.
+    printf("\n\n");
 
     return 0;
 }
