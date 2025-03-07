@@ -11,9 +11,35 @@
 
 int main()
 {
-    //Declaração das variáveis
-    int torre, bispo, rainha;  
-    
-    
+    // Declaração das variáveis
+    int torre = 1, bispo = 1, rainha = 1;
+
+    // Movimentação da TORRE!
+    while (torre <= 5)
+    {
+        printf("Direita\n");
+        torre++;
+    }
+
+    // Espaço para exibição.
+    printf("\n\n");
+
+    // Movimentação BISPO!
+    do
+    {
+        printf("Cima, Direita\n");
+        bispo++;
+
+    } while (bispo <= 5);
+
+    // Espaço para exibição.
+    printf("\n\n");
+
+    //Movimentação da RAINHA!
+    for(rainha;rainha <= 8; rainha++)
+    {
+        printf("Esquerda\n");
+    }
+
     return 0;
 }
