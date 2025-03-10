@@ -9,37 +9,55 @@
 
 #include <stdio.h>
 
+// Função que controla o movimento da TORRE!
+void movimento_torre(int torre)
+{
+    if (torre <= 5)
+    {
+        printf("Direita\n");
+        movimento_torre(torre + 1);
+    }
+}
+
+// Função que controla o movimento do BISPO!
+void movimento_bispo(int bispo)
+{
+    if (bispo <= 5)
+    {
+        printf("Cima, direita\n");
+        movimento_bispo(bispo + 1);
+    }
+}
+
+//Função que controla o movimento da RAINHA!
+void movimento_rainha(int rainha)
+{
+    if(rainha <= 8)
+    {
+        printf("Esquerda\n");
+        movimento_rainha(rainha + 1);
+    }
+}
+
 int main()
 {
     // Declaração das variáveis
     int torre = 1, bispo = 1, rainha = 1, cavalo = 1;
 
-    // Movimentação da TORRE!
-    while (torre <= 5)
-    {
-        printf("Direita\n");
-        torre++;
-    }
+    // Execução da movimentação da TORRE!
+    movimento_torre(torre);
 
     // Espaço para exibição.
     printf("\n\n");
 
-    // Movimentação BISPO!
-    do
-    {
-        printf("Cima, Direita\n");
-        bispo++;
-
-    } while (bispo <= 5);
-
+    // Execução da movimentação do BISPO!
+    movimento_bispo(bispo);
+    
     // Espaço para exibição.
     printf("\n\n");
 
-    // Movimentação da RAINHA!
-    for (rainha; rainha <= 8; rainha++)
-    {
-        printf("Esquerda\n");
-    }
+    // Execução da movimentação da rainha
+    movimento_rainha(rainha);
 
     // Espaço para exibição.
     printf("\n\n");
@@ -53,9 +71,5 @@ int main()
         }
         printf("Esquerda");
     }
-
-    // Espaço para exibição.
-    printf("\n\n");
-
     return 0;
 }
