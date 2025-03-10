@@ -22,17 +22,19 @@ void movimento_torre(int torre)
 // Função que controla o movimento do BISPO!
 void movimento_bispo(int bispo)
 {
-    if (bispo <= 5)
+    for (bispo; bispo <= 5; bispo++)
     {
-        printf("Cima, direita\n");
-        movimento_bispo(bispo + 1);
+        for (int i = 1; i <= 1; i++)
+        {
+            printf("Cima, direita\n");
+        }
     }
 }
 
-//Função que controla o movimento da RAINHA!
+// Função que controla o movimento da RAINHA!
 void movimento_rainha(int rainha)
 {
-    if(rainha <= 8)
+    if (rainha <= 8)
     {
         printf("Esquerda\n");
         movimento_rainha(rainha + 1);
@@ -52,7 +54,7 @@ int main()
 
     // Execução da movimentação do BISPO!
     movimento_bispo(bispo);
-    
+
     // Espaço para exibição.
     printf("\n\n");
 
@@ -63,13 +65,14 @@ int main()
     printf("\n\n");
 
     // Movimentação CAVALO!
-    while (cavalo < 2)
+    for (int i = 1, j = 2; i <= 2; i++, j--)
     {
-        for (cavalo; cavalo <= 2; cavalo++)
+        printf("Cima\n");
+        if (j == 1)
         {
-            printf("Baixo\n");
+            printf("Direita\n");
         }
-        printf("Esquerda");
     }
+
     return 0;
 }
